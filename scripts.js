@@ -244,7 +244,7 @@ document.querySelector('[data-search-form]').addEventListener('submit', (event) 
 */
 document.querySelector('[data-list-button]').addEventListener('click', () => {
     const fragment = document.createDocumentFragment()
-
+//fix dont repeat the same code just use the function
     for (const { author, id, image, title } of matches.slice(page * BOOKS_PER_PAGE, (page + 1) * BOOKS_PER_PAGE)) {
         const element = document.createElement('button')
         element.classList = 'preview'
